@@ -7,7 +7,7 @@ import { db } from "@/configs/db";
 import { CourseList } from "@/schema/schema";
 import { and, eq } from "drizzle-orm";
 import CourseBasicInfo from "../_components/CourseBasicInfo";
-import { BaseEnvironment } from "@/configs/BaseEnvironment";
+import { HOST_URL } from "@/configs/BaseEnvironment";
 import { IoCopyOutline } from "react-icons/io5";
 import { CourseType } from "@/types/types";
 import { ParamsType } from "../page";
@@ -18,7 +18,6 @@ const FinsihScreen = ({ params }: { params: ParamsType }) => {
   const [course, setCourse] = useState<CourseType | null>(null);
 
   const router = useRouter();
-  const { HOST_URL } = new BaseEnvironment();
   const COURSE_LINK = `${HOST_URL}/course/${course?.courseId}/start`;
 
   useEffect(() => {

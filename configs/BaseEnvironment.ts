@@ -4,9 +4,12 @@ config({ path: ".env.local" });
 
 export type Environment = "development" | "production" | "test";
 
+// Use this everywhere you need the base URL
+export const HOST_URL = process.env.NEXT_PUBLIC_HOST_URL || "http://localhost:3000";
+
 export class BaseEnvironment {
   defaultEnvironmentValues = {
-    HOST_URL: "http://localhost:3000",
+    // HOST_URL removed to avoid redundancy
     GOOGLE_GEMENI_API_KEY: "my-api-key",
     DRIZZLE_DATABASE_URL:
       "postgresql://myuser:mypassword@mydbhost.com/mydatabase",
@@ -24,12 +27,7 @@ export class BaseEnvironment {
     return process.env.NODE_ENV as Environment;
   }
 
-  get HOST_URL(): string {
-    return (
-      process.env.NEXT_PUBLIC_HOST_URL! ||
-      this.defaultEnvironmentValues.HOST_URL
-    );
-  }
+  // HOST_URL getter removed to avoid redundancy
 
   get GOOGLE_GEMENI_API_KEY(): string {
     return (

@@ -15,7 +15,6 @@ CourseAi is a platform that allows users to easily create and generate education
 ## Tech Stack
 
 - **Next.js**
-
 - **PostgreSQL**
 - **Firebase**
 - **Drizzle ORM**
@@ -62,16 +61,3 @@ CourseAi is a platform that allows users to easily create and generate education
    `bash
    npm run dev
 6. Visit`http://localhost:3000` to view the application.
-
-## Open to Contributions
-
-CourseAi is an open-source project and we welcome contributions from the community. If you would like to contribute to the project, please follow the steps below:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Create a pull request to the main repository.
-
-We look forward to your contributions!
