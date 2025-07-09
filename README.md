@@ -26,13 +26,13 @@ CourseAi is a platform that allows users to easily create and generate education
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bhataasim1/ai-content-generator.git
+   git clone https://github.com/agniv-kashyap/Course-AI.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd ai-content-generator
+   cd Course-AI
    ```
 
 3. Install dependencies:
